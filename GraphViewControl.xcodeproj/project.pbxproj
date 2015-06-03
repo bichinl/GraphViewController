@@ -17,7 +17,6 @@
 		7E3381441B1E870800ED68FD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3381431B1E870800ED68FD /* Security.framework */; };
 		7E3381461B1E871100ED68FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3381451B1E871100ED68FD /* SystemConfiguration.framework */; };
 		7E3381481B1E873000ED68FD /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3381471B1E873000ED68FD /* Firebase.framework */; };
-		7E33814E1B1E8AA500ED68FD /* FirebaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E33814D1B1E8AA500ED68FD /* FirebaseUrl.swift */; };
 		7E8FB7C41B1CE817006D17D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8FB7C31B1CE817006D17D2 /* AppDelegate.swift */; };
 		7E8FB7C61B1CE817006D17D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8FB7C51B1CE817006D17D2 /* ViewController.swift */; };
 		7E8FB7C91B1CE817006D17D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8FB7C71B1CE817006D17D2 /* Main.storyboard */; };
@@ -51,7 +50,6 @@
 		7E3381451B1E871100ED68FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7E3381471B1E873000ED68FD /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		7E3381491B1E876500ED68FD /* GraphViewControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphViewControl-Bridging-Header.h"; sourceTree = "<group>"; };
-		7E33814D1B1E8AA500ED68FD /* FirebaseUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseUrl.swift; sourceTree = "<group>"; };
 		7E8FB7BE1B1CE817006D17D2 /* GraphViewControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphViewControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8FB7C21B1CE817006D17D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8FB7C31B1CE817006D17D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 				7E3381331B1E7E5800ED68FD /* Tools.swift */,
 				7E3381371B1E85F600ED68FD /* Constants.swift */,
 				7E3381391B1E861000ED68FD /* MySingleton.swift */,
-				7E33814D1B1E8AA500ED68FD /* FirebaseUrl.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -301,7 +298,6 @@
 				7E3381311B1E532E00ED68FD /* GraphView_old.swift in Sources */,
 				7E3381341B1E7E5800ED68FD /* Tools.swift in Sources */,
 				7E8FB7E41B1CE855006D17D2 /* GraphView.swift in Sources */,
-				7E33814E1B1E8AA500ED68FD /* FirebaseUrl.swift in Sources */,
 				7E8FB7E81B1D31FD006D17D2 /* GraphViewCircle.swift in Sources */,
 				7E33813A1B1E861000ED68FD /* MySingleton.swift in Sources */,
 				7E3381381B1E85F600ED68FD /* Constants.swift in Sources */,
