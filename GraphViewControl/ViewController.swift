@@ -16,13 +16,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var values:[Double] = [20,15,0,50,3]
+        //var values:[Double] = [20,15,8,50,3]
         var listaBank:[Bank] = []
-        for i in 0...4{
+        for i in 0...5{
             var bank:Bank = Bank()
-            bank.cantidad = Double(values[i])
+            //bank.cantidad = Double(values[i])
+            let randomNumber = arc4random_uniform(35000)
+            bank.cantidad = Double(randomNumber)
             bank.tipo = "Salidas \(i)"
-            println("Bank tipo: \(bank.tipo); cantidad: \(bank.cantidad)")
+            //println("Bank tipo: \(bank.tipo); cantidad: \(bank.cantidad)")
             listaBank.append(bank)
         }
         

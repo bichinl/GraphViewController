@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3381311B1E532E00ED68FD /* GraphView_old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3381301B1E532E00ED68FD /* GraphView_old.swift */; };
 		7E8FB7C41B1CE817006D17D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8FB7C31B1CE817006D17D2 /* AppDelegate.swift */; };
 		7E8FB7C61B1CE817006D17D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8FB7C51B1CE817006D17D2 /* ViewController.swift */; };
 		7E8FB7C91B1CE817006D17D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8FB7C71B1CE817006D17D2 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E3381301B1E532E00ED68FD /* GraphView_old.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView_old.swift; sourceTree = "<group>"; };
 		7E8FB7BE1B1CE817006D17D2 /* GraphViewControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphViewControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8FB7C21B1CE817006D17D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8FB7C31B1CE817006D17D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				7E8FB7C31B1CE817006D17D2 /* AppDelegate.swift */,
 				7E8FB7C51B1CE817006D17D2 /* ViewController.swift */,
 				7E8FB7E31B1CE855006D17D2 /* GraphView.swift */,
+				7E3381301B1E532E00ED68FD /* GraphView_old.swift */,
 				7E8FB7E71B1D31FD006D17D2 /* GraphViewCircle.swift */,
 				7E8FB7C71B1CE817006D17D2 /* Main.storyboard */,
 				7E8FB7CA1B1CE817006D17D2 /* Images.xcassets */,
@@ -224,6 +227,7 @@
 				7E8FB7C61B1CE817006D17D2 /* ViewController.swift in Sources */,
 				7E8FB7E61B1CF1AA006D17D2 /* Bank.swift in Sources */,
 				7E8FB7C41B1CE817006D17D2 /* AppDelegate.swift in Sources */,
+				7E3381311B1E532E00ED68FD /* GraphView_old.swift in Sources */,
 				7E8FB7E41B1CE855006D17D2 /* GraphView.swift in Sources */,
 				7E8FB7E81B1D31FD006D17D2 /* GraphViewCircle.swift in Sources */,
 			);
@@ -423,6 +427,7 @@
 				7E8FB7DF1B1CE817006D17D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E8FB7E01B1CE817006D17D2 /* Build configuration list for PBXNativeTarget "GraphViewControlTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +436,7 @@
 				7E8FB7E21B1CE817006D17D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

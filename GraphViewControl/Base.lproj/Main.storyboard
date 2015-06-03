@@ -17,46 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4Z-bH-s0A" customClass="GraphView" customModule="GraphViewControl" customModuleProvider="target">
-                                <rect key="frame" x="-1" y="0.0" width="376" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rk-MQ-QSF" customClass="GraphView" customModule="GraphViewControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="LAd-UO-KGx"/>
+                                    <constraint firstAttribute="height" constant="300" id="NHb-UD-0Jq"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
-                                        <real key="value" value="70"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="topMargin">
-                                        <real key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="sidesMargins">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomMargin">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTitleChart">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="horLines">
-                                        <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showChartEdges" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showVerticlaLines" value="NO"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="i4Z-bH-s0A" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="R6N-hN-VEN"/>
-                            <constraint firstAttribute="width" secondItem="i4Z-bH-s0A" secondAttribute="width" id="aby-8Q-w7B"/>
-                            <constraint firstAttribute="centerX" secondItem="i4Z-bH-s0A" secondAttribute="centerX" constant="0.5" id="ial-Ve-gHr"/>
+                            <constraint firstItem="7rk-MQ-QSF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="RXp-CL-up5"/>
+                            <constraint firstAttribute="centerX" secondItem="7rk-MQ-QSF" secondAttribute="centerX" id="d6A-JP-EYO"/>
+                            <constraint firstAttribute="width" secondItem="7rk-MQ-QSF" secondAttribute="width" id="rsN-op-g11"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="graphView" destination="i4Z-bH-s0A" id="Yn9-wk-W0r"/>
+                        <outlet property="graphView" destination="7rk-MQ-QSF" id="kHA-r9-xnH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
