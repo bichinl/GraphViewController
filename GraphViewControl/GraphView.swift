@@ -321,7 +321,6 @@ import UIKit
         }
         
         if self.finalDetailTextRect != nil {
-            println("rect: \(self.finalDetailTextRect)")
             self.detailLabel.frame = self.finalDetailTextRect
             self.detailLabel.text = self.detailTextString
             self.detailLabel.textAlignment = NSTextAlignment.Center
@@ -329,7 +328,7 @@ import UIKit
             self.detailLabel.backgroundColor = self.background
 
             self.detailLabel.font = self.tools.optimisedfindAdaptiveFontWithName("Helvetica", label: self.detailLabel, minSize: 12, maxSize: 38)
-            println("\(self.detailLabel.font)")
+            //println("\(self.detailLabel.font)")
 
             self.addSubview(self.detailLabel)
         }

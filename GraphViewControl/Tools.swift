@@ -41,7 +41,7 @@ class Tools{
             let textFrame = attributedString.boundingRectWithSize(CGSize(width: label.bounds.size.width, height: CGFloat.max), options: NSStringDrawingOptions.UsesLineFragmentOrigin , context: nil)
             
             let difference = label.frame.height - textFrame.height
-            println("\(tempMin)-\(tempMax) - tested : \(testedSize) --> difference : \(difference)")
+            //println("\(tempMin)-\(tempMax) - tested : \(testedSize) --> difference : \(difference)")
             if(difference > 0){
                 tempMin = testedSize
             }else{
