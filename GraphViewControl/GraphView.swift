@@ -10,16 +10,18 @@ import UIKit
 
 @IBDesignable class GraphView: UIView {
 
+    let tools:Tools = Tools()
+    
     @IBInspectable var titleTextString:String! = "Component Name"
     @IBInspectable var background:UIColor = UIColor(red: 0.320, green: 0.800, blue: 0.608, alpha: 1.000)
     @IBInspectable var textColor: UIColor = UIColor.whiteColor()
     @IBInspectable var marginTop: CGFloat = 30
-    @IBInspectable var marginLeft: CGFloat = 70
+    @IBInspectable var marginLeft: CGFloat = 85
     @IBInspectable var marginRight: CGFloat = 20
     @IBInspectable var marginBottom: CGFloat = 10
     
     let titleHeight: CGFloat = 21
-    let marginTitle: CGFloat = 10
+    let marginTitle: CGFloat = 20
 
     let detailHeight: CGFloat = 16
     let marginDetail: CGFloat = 10
@@ -90,8 +92,8 @@ import UIKit
         
         let graphContainerExpression = CGRectMake(marginLeft, marginTop + titleHeight + marginTitle, w - marginLeft - marginRight, h - marginTop - titleHeight - marginTitle - marginDetail - detailHeight - marginBottom - hTriangle)
         let detailRectExpression = CGRectMake(marginRight, h - detailHeight - marginBottom - hTriangle, w - marginRight * 2, detailHeight)
-        let maxValueExpression = CGRectMake(marginRight, graphContainerExpression.origin.y, graphContainerExpression.origin.x - marginRight - 5, valuesHeight)
-        let minValueExpression = CGRectMake(marginRight, graphContainerExpression.size.height + graphContainerExpression.origin.y - valuesHeight, graphContainerExpression.origin.x - marginRight - 5, valuesHeight)
+        let maxValueExpression = CGRectMake(10, graphContainerExpression.origin.y, graphContainerExpression.origin.x - marginRight - 0, valuesHeight)
+        let minValueExpression = CGRectMake(10, graphContainerExpression.size.height + graphContainerExpression.origin.y - valuesHeight, graphContainerExpression.origin.x - marginRight - 0, valuesHeight)
         
         //// Frames
         let frame = CGRectMake(0, 0, w, h)
@@ -306,14 +308,14 @@ import UIKit
             maxCantidad = Double(maxElement(listaBank.map{$0.cantidad}))
             //maxCantidad = Double(maxElement(listaBank))
             println("maxCantidad: \(maxCantidad)")
-            self.maxValueString = "\(maxCantidad)"
+            self.maxValueString = "\(self.tools.conFormatoCurrency(maxCantidad))"
             
             minCantidad = Double(minElement(listaBank.map{$0.cantidad}))
             //minCantidad = Double(minElement(listaBank))
             println("minCantidad: \(minCantidad)")
-            self.minValueString = "0"
+            self.minValueString = self.tools.conFormatoCurrency(0)
             
-            self.detailTextString = "Cantidad \(listaBank[0].cantidad)"
+            self.detailTextString = "Cantidad \(self.tools.conFormatoCurrency(listaBank[0].cantidad))"
         }
         
         if self.finalDetailTextRect != nil {
@@ -324,7 +326,7 @@ import UIKit
             self.detailLabel.textColor = self.textColor
             self.detailLabel.backgroundColor = self.background
 
-            self.detailLabel.font = self.optimisedfindAdaptiveFontWithName("Helvetica", label: self.detailLabel, minSize: 12, maxSize: 38)
+            self.detailLabel.font = self.tools.optimisedfindAdaptiveFontWithName("Helvetica", label: self.detailLabel, minSize: 12, maxSize: 38)
             println("\(self.detailLabel.font)")
 
             self.addSubview(self.detailLabel)
@@ -346,37 +348,9 @@ import UIKit
         circleList[tag].isFilled = true
         circleList[tag].setNeedsDisplay()
         
-        self.detailLabel.text = "Cantidad \(listaBank[tag].cantidad)"
+        self.detailLabel.text = "Cantidad \( self.tools.conFormatoCurrency(listaBank[tag].cantidad))"
     }
     
-    func optimisedfindAdaptiveFontWithName(fontName:String, label:UILabel!, minSize:CGFloat,maxSize:CGFloat) -> UIFont!{
-        
-        var tempFont:UIFont
-        var tempHeight:CGFloat
-        var tempMax:CGFloat = maxSize
-        var tempMin:CGFloat = minSize
-        
-        while (ceil(tempMin) != ceil(tempMax)){
-            let testedSize = (tempMax + tempMin) / 2
-            
-            
-            tempFont = UIFont(name:fontName, size:testedSize)!
-            let attributedString = NSAttributedString(string: label.text!, attributes: [NSFontAttributeName : tempFont])
-            
-            let textFrame = attributedString.boundingRectWithSize(CGSize(width: label.bounds.size.width, height: CGFloat.max), options: NSStringDrawingOptions.UsesLineFragmentOrigin , context: nil)
-            
-            let difference = label.frame.height - textFrame.height
-            println("\(tempMin)-\(tempMax) - tested : \(testedSize) --> difference : \(difference)")
-            if(difference > 0){
-                tempMin = testedSize
-            }else{
-                tempMax = testedSize
-            }
-        }
-        
-        
-        //returning the size -1 (to have enought space right and left)
-        return UIFont(name: fontName, size: tempMin - 1)
-    }
+    
 
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E3381311B1E532E00ED68FD /* GraphView_old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3381301B1E532E00ED68FD /* GraphView_old.swift */; };
+		7E3381341B1E7E5800ED68FD /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3381331B1E7E5800ED68FD /* Tools.swift */; };
 		7E8FB7C41B1CE817006D17D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8FB7C31B1CE817006D17D2 /* AppDelegate.swift */; };
 		7E8FB7C61B1CE817006D17D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8FB7C51B1CE817006D17D2 /* ViewController.swift */; };
 		7E8FB7C91B1CE817006D17D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8FB7C71B1CE817006D17D2 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		7E3381301B1E532E00ED68FD /* GraphView_old.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView_old.swift; sourceTree = "<group>"; };
+		7E3381331B1E7E5800ED68FD /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		7E8FB7BE1B1CE817006D17D2 /* GraphViewControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphViewControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8FB7C21B1CE817006D17D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8FB7C31B1CE817006D17D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E3381321B1E7E3A00ED68FD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7E3381331B1E7E5800ED68FD /* Tools.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
 		7E8FB7B51B1CE817006D17D2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		7E8FB7C01B1CE817006D17D2 /* GraphViewControl */ = {
 			isa = PBXGroup;
 			children = (
+				7E3381321B1E7E3A00ED68FD /* Tools */,
 				7E8FB7E51B1CF1AA006D17D2 /* Bank.swift */,
 				7E8FB7C31B1CE817006D17D2 /* AppDelegate.swift */,
 				7E8FB7C51B1CE817006D17D2 /* ViewController.swift */,
@@ -228,6 +239,7 @@
 				7E8FB7E61B1CF1AA006D17D2 /* Bank.swift in Sources */,
 				7E8FB7C41B1CE817006D17D2 /* AppDelegate.swift in Sources */,
 				7E3381311B1E532E00ED68FD /* GraphView_old.swift in Sources */,
+				7E3381341B1E7E5800ED68FD /* Tools.swift in Sources */,
 				7E8FB7E41B1CE855006D17D2 /* GraphView.swift in Sources */,
 				7E8FB7E81B1D31FD006D17D2 /* GraphViewCircle.swift in Sources */,
 			);
