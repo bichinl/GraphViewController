@@ -271,7 +271,7 @@ import UIKit
             let nextPoint = CGPoint(x:columnXPoint(i), y:columnYPoint(p))
             graphPath.addLineToPoint(nextPoint)
         }
-        UIColor.whiteColor().setStroke()
+        textColor.setStroke()
         graphPath.stroke()
         
         // Draw Circles
@@ -279,6 +279,7 @@ import UIKit
         var circle:GraphViewCircle = GraphViewCircle(frame: CGRect(origin: CGPoint(x: columnXPoint(0) - circleSize.width / 2, y: columnYPoint(p) - circleSize.height / 2), size: circleSize))
         circle.tag = 0
         circle.emptyColor = background
+        circle.filledColor = textColor
         circle.addTarget(self, action: "circlePress:", forControlEvents: UIControlEvents.TouchUpInside)
         circle.isFilled = true
         self.addSubview(circle)
@@ -292,6 +293,7 @@ import UIKit
             var circle:GraphViewCircle = GraphViewCircle(frame: CGRect(origin: nextPoint, size: circleSize))
             circle.tag = i
             circle.emptyColor = background
+            circle.filledColor = textColor
             circle.addTarget(self, action: "circlePress:", forControlEvents: UIControlEvents.TouchUpInside)
             self.addSubview(circle)
             self.circleList.append(circle)
